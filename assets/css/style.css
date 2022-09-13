@@ -15,8 +15,8 @@ body {
 }
 
 .container div {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: white;
   position: absolute;
   border-radius: 50px;
@@ -24,95 +24,68 @@ body {
 
 .container__circle1 {
   left: 50%;
-  animation: circle1 3s ease-in-out 1.5s infinite alternate;
+  animation: circle1 3s ease-in-out 1.5s infinite alternate, circle 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle2 {
   left: 50%;
-  top: calc(100% - 70px);
-  animation: circle2 3s ease-in-out 1.5s infinite alternate;
+  top: calc(100% - 50px);
+  animation: circle2 3s ease-in-out 1.5s infinite alternate, circle 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle3 {
   top: 50%;
-  animation: circle3 3s ease-in-out 1.5s infinite alternate;
+  animation: circle3 3s ease-in-out 1.5s infinite alternate, circle 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle4 {
-  left: calc(100% - 70px);
+  left: calc(100% - 50px);
   top: 50%;
-  animation: circle4 3s ease-in-out 1.5s infinite alternate;
+  animation: circle4 3s ease-in-out 1.5s infinite alternate, circle 3s ease-in-out 1.5s infinite alternate;
 }
 
 @keyframes circle1 {
   0% {
     top: 0%;
-    background-color: white;
-  }
-
-  50% {
-    background-color: #ff5959;
-  }
-
-  75% {
-    background-color: #ff2929;
   }
 
   100% {
     top: 50%;
-    background-color: #ce0000;
-    width: 100px;
-    height: 100px;
   }
 }
 
 @keyframes circle2 {
   0% {
-    top: calc(100% - 75px);
-    background-color: white;
-  }
-
-  50% {
-    background-color: #ff5959;
-  }
-
-  75% {
-    background-color: #ff2929;
+    top: calc(100% - 50px);
   }
 
   100% {
     top: 50%;
-    background-color: #ce0000;
-    width: 100px;
-    height: 100px;
   }
 }
 
 @keyframes circle3 {
   0% {
     left: 0%;
-    background-color: white;
-  }
-
-  50% {
-    background-color: #ff5959;
-  }
-
-  75% {
-    background-color: #ff2929;
   }
 
   100% {
     left: 50%;
-    background-color: #ce0000;
-    width: 100px;
-    height: 100px;
   }
 }
 
 @keyframes circle4 {
   0% {
-    left: calc(100% - 75px);
+    left: calc(100% - 50px);
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes circle {
+  0% {
     background-color: white;
   }
 
@@ -125,7 +98,6 @@ body {
   }
 
   100% {
-    left: 50%;
     background-color: #ce0000;
     width: 100px;
     height: 100px;
