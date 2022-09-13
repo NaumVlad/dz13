@@ -4,12 +4,12 @@
 
 body {
   margin: 5px;
+  background-color: grey;
 }
 
 .container {
   width: calc(100vw - 10px);
   height: calc(100vh - 10px);
-  background-color: grey;
   position: relative;
   text-align: center;
 }
@@ -24,24 +24,24 @@ body {
 
 .container__circle1 {
   left: 50%;
-  animation: circle1 3s ease-in-out 1s infinite alternate;
+  animation: circle1 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle2 {
   left: 50%;
   top: calc(100% - 70px);
-  animation: circle2 3s ease-in-out 1s infinite alternate;
+  animation: circle2 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle3 {
   top: 50%;
-  animation: circle3 3s ease-in-out 1s infinite alternate;
+  animation: circle3 3s ease-in-out 1.5s infinite alternate;
 }
 
 .container__circle4 {
   left: calc(100% - 70px);
   top: 50%;
-  animation: circle4 3s ease-in-out 1s infinite alternate;
+  animation: circle4 3s ease-in-out 1.5s infinite alternate;
 }
 
 @keyframes circle1 {
